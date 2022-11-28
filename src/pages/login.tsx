@@ -1,21 +1,23 @@
 import Input from '../components/fragments/Input';
 import { BsPerson } from 'react-icons/bs';
 import { BiLock } from 'react-icons/bi';
-import { useRef } from 'react';
+import { FormEvent, useRef } from 'react';
+import router from 'next/router';
 
 const Login = () => {
   const emailRef = useRef<HTMLInputElement | any>();
   const passwordRef = useRef<HTMLInputElement | any>();
 
-  const addText = (text: string) => {
-    if (emailRef?.current) {
-      emailRef.current.value += text;
-      emailRef.current.focus();
-    }
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    router.push('/clocking');
   };
 
   return (
-    <div className="flex max-w-limit mx-auto items-center h-screen justify-center gap-[5vw] flex-col sm:flex-row p-2">
+    <form
+      onSubmit={onSubmit}
+      className="flex max-w-limit mx-auto items-center h-screen justify-center gap-[5vw] flex-col sm:flex-row p-2"
+    >
       <div className="flex flex-col items-center">
         <img src="/assets/images/logo.png" alt="" />
         <h3 className="text-[40px] font-bold m-0">03:00 PM</h3>
@@ -75,9 +77,11 @@ const Login = () => {
             Clear
           </button>
         </div>
-        <button className="bg-primary w-full p-4 mt-2 rounded-[8px]">Log In</button>
+        <button type={'submit'} className="bg-primary w-full p-4 mt-2 rounded-[8px]">
+          Log In
+        </button>
       </div>
-    </div>
+    </form>
   );
 };
 
