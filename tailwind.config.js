@@ -8,7 +8,18 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#FF8F00',
+        black: '#212121',
+      },
+      maxWidth: {
+        limit: '1200px',
+      },
+      fontFamily: {
+        title: 'DM Serif Display',
+      },
+    },
   },
   plugins: [],
 };
