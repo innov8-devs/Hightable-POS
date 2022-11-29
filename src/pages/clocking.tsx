@@ -24,7 +24,7 @@ const ClockIng = () => {
           Clock-Out
         </button>
       </div>
-      <Modal size="xl" isOpen={modalIsOpen} onClose={closeModal} closeRedirect={'/position'}>
+      <Modal size="xl" isOpen={modalIsOpen} onClose={closeModal} closeRedirect={'/activities'}>
         <ModalHeader className="pl-[100px] pr-[20px]">
           <h1 className="font-title text-grey-200 text-[22px] font-semibold">User Clock In</h1>
         </ModalHeader>
