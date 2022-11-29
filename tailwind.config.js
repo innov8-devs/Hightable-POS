@@ -22,6 +22,13 @@ module.exports = {
       fontFamily: {
         title: 'DM Serif Display',
       },
+      boxShadow: {
+        card: '0px 1px 13px rgba(78, 51, 0, 0.11)',
+      },
+      gridTemplateColumns: {
+        dashboard: 'repeat(auto-fit, 200px)',
+        'dashboard-mobile': 'repeat(auto-fit, 120px)',
+      },
     },
   },
   plugins: [],
