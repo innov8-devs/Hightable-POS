@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sm-modal {
+  width: 300px;
+}
+
+.base-modal {
+  width: 500px;
+}
+
+.md-modal {
+  width: 600px;
+}
+
+.lg-modal {
+  width: 700px;
+}
+
+.xl-modal {
+  width: 850px;
+}
