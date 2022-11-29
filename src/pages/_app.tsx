@@ -17,7 +17,7 @@ Bugsnag.start({
 
 const ErrorBoundary = Bugsnag.getPlugin('react')!.createErrorBoundary(React);
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Head>
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <RecoilRoot>
         <ErrorBoundary>
           <ApolloProvider client={client}>
-            <BaseLayout>
+            <BaseLayout router={router}>
               <Component {...pageProps} />
             </BaseLayout>
           </ApolloProvider>

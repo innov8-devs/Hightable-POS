@@ -6,10 +6,10 @@ interface Props
   children?: ReactNode;
   prefix?: ReactNode;
   suffix?: ReactNode;
-  variant?: 'primary' | 'secondary' | 'unstyled';
+  variant?: 'primary' | 'secondary' | 'danger' | 'unstyled';
 }
 
-const Button: FC<Props> = ({ children, className, variant = 'unstyled', prefix, suffix, ...props }) => {
+const Button: FC<Props> = ({ children, className = '', variant = 'unstyled', prefix, suffix, ...props }) => {
   return (
     <button className={`${buttonVariantStyle[variant]} flex items-center justify-center ${className}`} {...props}>
       {prefix}
