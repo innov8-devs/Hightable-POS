@@ -1,8 +1,9 @@
-import Input from '../components/fragments/Input';
+import Input from '../components/fragments/Common/Input';
 import { BsPerson } from 'react-icons/bs';
 import { BiLock } from 'react-icons/bi';
 import { FormEvent, useRef } from 'react';
 import router from 'next/router';
+import Modal from '../components/fragments/Common/Modal/Modal';
 
 const Login = () => {
   const emailRef = useRef<HTMLInputElement | any>();

@@ -13,6 +13,7 @@ module.exports = {
         primary: '#FF8F00',
         black: '#212121',
         'grey-100': '#D9D9D9',
+        'grey-200': '#666670',
       },
       maxWidth: {
         limit: '1200px',

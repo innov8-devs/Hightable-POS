@@ -811,6 +811,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-detect-click-outside@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/react-detect-click-outside/-/react-detect-click-outside-1.1.7.tgz#8dd5766544475ab0d55084b3e2a35165e9a47854"
+  integrity sha512-dMrBZD7JW0Eh/uYNmMLTNwFj6afGYxAnc80fDSGJdjXjxJddH8ZazyMg2emyb8CAx9Hilr+r1fY+tm7O7m9eJg==
+
 react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
@@ -819,10 +824,10 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-icons@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
-  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
+react-icons@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.7.1.tgz#0f4b25a5694e6972677cb189d2a72eabea7a8345"
+  integrity sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
