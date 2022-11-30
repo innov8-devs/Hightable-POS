@@ -21,6 +21,7 @@ module.exports = {
       },
       fontFamily: {
         title: 'DM Serif Display',
+        body: 'Montserrat',
       },
       boxShadow: {
         card: '0px 1px 13px rgba(78, 51, 0, 0.11)',

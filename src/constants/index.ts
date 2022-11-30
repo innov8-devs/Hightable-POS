@@ -47,3 +47,22 @@ export const dashboardOptions = [
     icon: '/assets/svgs/settings.svg',
   },
 ];
+
+export const orderTypeHoverListOptions = [
+  {
+    path: '/dashboard/menu/dine-in',
+    title: 'Dine In',
+  },
+  {
+    path: '/dashboard/menu/take-away',
+    title: 'Take Away',
+  },
+  {
+    path: '/dashboard/menu/home-delivery',
+    title: 'Home Delivery',
+  },
+  {
+    path: '/dashboard/menu/online-order',
+    title: 'Online Order',
+  },
+];
