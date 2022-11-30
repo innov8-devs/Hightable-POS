@@ -1,10 +1,5 @@
-import { BsFillCheckSquareFill } from 'react-icons/bs';
-import Button from '../components/fragments/Common/Button';
-import { Modal } from '../components/fragments/Common/Modal';
-import ModalBody from '../components/fragments/Common/Modal/ModalBody';
-import ModalHeader from '../components/fragments/Common/Modal/ModalHeader';
 import { useBoolean } from '../hooks/useBoolean';
-import router from 'next/router';
+import SuccessModal from '../components/fragments/Onboarding/SuccessModal';
 
 const ClockIng = () => {
   const [modalIsOpen, { off: closeModal, on: openModal }] = useBoolean();
@@ -25,29 +20,7 @@ const ClockIng = () => {
           Clock-Out
         </button>
       </div>
-      <Modal size="xl" isOpen={modalIsOpen} onClose={closeModal}>
-        <ModalHeader className="pl-[100px] pr-[20px]">
-          <h1 className="font-title text-grey-200 text-[22px] font-semibold">User Clock In</h1>
-        </ModalHeader>
-        <ModalBody>
-          <div className="h-[340px] flex justify-center items-center flex-col">
-            <p className="font-title text-grey-200 text-[22px] font-semibold mb-16 w-96 text-center">
-              cashier@slow clocked in successfully as at 01/09/2022, 03:00PM
-            </p>
-            <Button
-              variant="primary"
-              prefix={<BsFillCheckSquareFill />}
-              className={'w-36'}
-              onClick={() => {
-                closeModal();
-                router.push('/dashboard');
-              }}
-            >
-              OK
-            </Button>
-          </div>
-        </ModalBody>
-      </Modal>
+      <SuccessModal isOpen={modalIsOpen} onClose={closeModal} />
     </div>
   );
 };
