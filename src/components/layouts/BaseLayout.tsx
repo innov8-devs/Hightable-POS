@@ -1,6 +1,6 @@
 import { Router } from 'next/router';
 import { FC, ReactNode } from 'react';
-import DashboardHeader from '../fragments/Dashboard/Header';
+import DashboardHeader from '../fragments/Dashboard/Global/Header';
 
 type Props = {
   children?: ReactNode;

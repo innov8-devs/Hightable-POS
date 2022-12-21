@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { BiLogOut } from 'react-icons/bi';
-import Button from '../Common/Button';
+import Button from '../../Common/Button';
 
 const DashboardHeader = () => {
   return (

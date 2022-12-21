@@ -15,6 +15,7 @@ module.exports = {
         black: '#212121',
         'grey-100': '#D9D9D9',
         'grey-200': '#666670',
+        'grey-300': '#4A4A4A',
       },
       maxWidth: {
         limit: '1200px',
@@ -29,6 +30,10 @@ module.exports = {
       gridTemplateColumns: {
         dashboard: 'repeat(auto-fit, 200px)',
         'dashboard-mobile': 'repeat(auto-fit, 120px)',
+      },
+      flex: {
+        2: '2 2 0%',
+        8: '8 8 0%',
       },
     },
   },
