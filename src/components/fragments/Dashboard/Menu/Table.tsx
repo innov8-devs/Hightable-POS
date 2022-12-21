@@ -1,6 +1,7 @@
 import { FC, useMemo } from 'react';
 import { BsPerson } from 'react-icons/bs';
 import { range } from 'range';
+import router from 'next/router';
 
 interface Props {
   shape: 'square' | 'circle';
@@ -24,6 +25,7 @@ const Table: FC<Props> = ({ shape, tableNumber, seats }) => {
         width: shape == 'square' ? width : radius,
         height: shape == 'square' ? height : radius,
       }}
+      onClick={() => router.push('/dashboard/menu/order')}
     >
       <div className="rounded-full w-14 h-14 bg-grey-300 flex items-center justify-center text-white text-[12px] font-medium font-body">
         T{tableNumber} <BsPerson className="ml-1" />
