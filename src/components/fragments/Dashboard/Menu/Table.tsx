@@ -66,13 +66,12 @@ const Table: FC<Props> = ({ shape, tableNumber, seats }) => {
         </>
       ) : (
         <>
-          {groupIntoPairsOfTwo(seats[0]).map((pair: number[], i, array) => (
+          {range(0, seats[0]).map((pair: number, i: number, array: number[]) => (
             <div
               className={`flex -z-10 absolute justify-between h-10`}
-              style={{ width: radius + 12, transform: `rotate(${Math.ceil(180 / array.length) * i}deg)` }}
+              style={{ width: radius + 12, transform: `rotate(${Math.ceil(360 / array.length) * i + 90}deg)` }}
             >
               <div className={`w-2 h-10 bg-[#4A4A4A] rounded-md`} />
-              {pair?.[1] < array.length && <div className={`w-2 h-10 bg-[#4A4A4A] rounded-md`} />}
             </div>
           ))}
         </>
